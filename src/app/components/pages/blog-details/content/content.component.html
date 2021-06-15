@@ -1,0 +1,154 @@
+<div class="blog-standard-area pt-90 pb-120" *ngFor="let item of blogdetails">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="blog-standard">
+                    <div class="single-blog-standard  mt-30">
+                        <div class="blog-dteails-content blog-border">
+                            <div class="blog-details-top">
+                                <a routerLink="/blog/cat/{{cat.id}}" *ngFor="let cat of getCategory(item.category)">
+                                    <span>{{cat.title}}</span>
+                                </a>
+                                <h2 class="title">{{item.title}}</h2>
+                                <ul>
+                                    <li><i class="fal fa-eye"></i> {{item.views}} Views</li>
+                                    <li><i class="fal fa-comments"></i> {{item.reviews.length}} Comments</li>
+                                    <li><i class="fal fa-calendar-alt"></i> {{item.postdate}}</li>
+                                </ul>
+                            </div>
+                            <div [innerHtml]="item.htmldesc"></div>
+                            <div class="blog-details-bar d-flex justify-content-between mt-40 mb-50">
+                                <div class="blog-tags">
+                                    <h4 class="title">Releted Tags</h4>
+                                    <ul>
+                                        <li *ngFor="let tag of getBlogTags(item.tags)">
+                                            <a routerLink="/blog/tag/{{tag.id}}">{{tag.title}} </a> 
+                                        </li> 
+                                    </ul>
+                                </div>
+                                <div class="blog-social text-right">
+                                    <h4 class="title">Social Share</h4>
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-typo3"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-staylinked"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="blog-details-next-prev d-flex justify-content-between pt-45 pb-45">
+                                <div class="post-prev">
+                                    <a routerLink="/">
+                                        <span>Prev Post</span>
+                                        <h4 class="title">Tips On Minimalist</h4>
+                                    </a>
+                                </div>
+                                <div class="post-next text-right">
+                                    <a routerLink="/">
+                                        <span>Next Post</span>
+                                        <h4 class="title">Less Is More</h4>
+                                    </a>
+                                </div>
+                                <a href="#"><img src="assets/images/dot-box.png" alt=""></a>
+                            </div>
+                            <div class="blog-details-releted-post mt-45">
+                                <h4 class="title">Releted Post</h4>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6" *ngFor="let post of blogpost | slice:0:2">
+                                        <div class="blog-details-releted-item mt-30">
+                                            <div class="releted-thumb">
+                                                <img [src]="post.gridimg" [alt]="post.title">
+                                            </div>
+                                            <div class="releted-content">
+                                                <span><i class="fal fa-calendar-alt"></i> {{post.postdate}}</span>
+                                                <a routerLink="/blog-details/{{post.id}}">
+                                                    <h4 class="title">{{post.title | slice:0:45}}</h4>
+                                                </a>
+                                                <p>{{post.shortdesc | slice:0:70}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-details-written mt-50">
+                                <div class="written-area d-flex align-items-center" *ngFor="let author of getAuthor(item.author)">
+                                    <div class="written-thumb">
+                                        <img [src]="author.img" [alt]="author.name">
+                                    </div>
+                                    <div class="written-content">
+                                        <span>Written by</span>
+                                        <h4 class="title">{{author.name}}</h4>
+                                        <p [innerHtml]="author.htmldesc | slice:0:200"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-details-comments mt-45">
+                                <h4 class="title">{{item.reviews.length}} Comments</h4>
+                                <div class="blog-comments-area" *ngFor="let review of item.reviews">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <div class="blog-left" *ngFor="let user of getAuthor(review.user)">
+                                            <h6 class="title">{{user.name}}</h6>
+                                            <span>{{review.commentdate}}</span>
+                                        </div>
+                                        <div class="blog-right">
+                                            <a href="#"><i class="fal fa-reply"></i> Reply</a>
+                                        </div>
+                                    </div>
+                                    <img [src]="user.img" [alt]="user.name" *ngFor="let user of getAuthor(review.user)">
+                                    <p>{{review.comment}}</p>
+                                </div>
+                            </div>
+                            <div class="blog-details-post-comments">
+                                <h4 class="title">Post Comment</h4>
+                                <div class="post-comments-area gray-bg">
+                                    <form>
+                                        <div class="input-box mt-20">
+                                            <textarea name="#" id="#" cols="30" rows="10"
+                                                placeholder="Type your comments...."></textarea>
+                                        </div>
+                                        <div class="input-box mt-20">
+                                            <input type="text" placeholder="Type your name....">
+                                        </div>
+                                        <div class="input-box mt-20">
+                                            <input type="email" placeholder="Type your email....">
+                                        </div>
+                                        <div class="input-box mt-20">
+                                            <input type="text" placeholder="Type your website....">
+                                        </div>
+                                        <div class="input-box mt-20">
+                                            <button class="main-btn"><i class="fal fa-comments"></i>Post
+                                                Comment</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="blog-sidebar-area ml-20">
+                    <div class="blog-sidebar-item mt-30" *ngFor="let author of getAuthor(item.author)">
+                        <div class="sidebar-title">
+                            <h4 class="title">About Me</h4>
+                        </div>
+                        <div class="sidebar-about-contnent text-center mt-35">
+                            <img [src]="author.img" [alt]="author.name">
+                            <h6 class="title">{{author.name}}</h6>
+                            <p [innerHtml]="author.htmldesc | slice:0:100"></p>
+                            <ul>
+                                <li *ngFor="let item of author.social">
+                                    <a routerLink="{{item.url}}">
+                                        <i [class]="item.icon"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <app-blogsidebar></app-blogsidebar>
+            </div>
+        </div>
+    </div>
+</div>

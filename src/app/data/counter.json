@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "title":"Project Complete",
+        "text":"Sed ut perspiciatis unde omnis iste natus error sit voluptsantium doloremque laudantium",
+        "icon":"fal fa-archive",
+        "value":569
+    },
+    {
+        "id":2,
+        "title":"Happy Clients",
+        "text":"Sed ut perspiciatis unde omnis iste natus error sit voluptsantium doloremque laudantium",
+        "icon":"fal fa-user",
+        "value":356
+    },
+    {
+        "id":3,
+        "title":"Business Partners",
+        "text":"Sed ut perspiciatis unde omnis iste natus error sit voluptsantium doloremque laudantium",
+        "icon":"fal fa-globe",
+        "value":783
+    },
+    {
+        "id":4,
+        "title":"IT Consultant",
+        "text":"Sed ut perspiciatis unde omnis iste natus error sit voluptsantium doloremque laudantium",
+        "icon":"fal fa-award",
+        "value":894
+    }
+]

@@ -1,0 +1,41 @@
+<div class="features-area pt-120 pb-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="features-item">
+                    <strong>Core features</strong>
+                    <h2 class="title">Get More Good Experience.</h2>
+                    <span>Our knowledge of computers will help us</span>
+                    <p>Does any industry face a more complex audience journey and marketing sales process than B2B technology? Consider the number of people who influence a sale, the length of the decision-making cycle, the competing interests of the people who purchase, implement, manage, and use the technology. It’s a lot meaningful content here.</p>
+                    <ul>
+                        <li><a class="main-btn" routerLink="/about">Learn More</a></li>
+                        <li><a class="main-btn main-btn-2" href="#"> <i class="fal fa-video"></i>Learn More</a></li>
+                    </ul>
+                    <img class="d-none d-lg-block" src="assets/images/features-thumb.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6" *ngFor="let item of services | slice:0:2">
+                <div class="single-features mt-30">
+                    <i [class]="item.icon"></i>
+                    <h4 class="title">{{item.title}}</h4>
+                    <p>{{item.shortdesc | slice:0:85}}</p>
+                    <a routerLink="/service-details"><i class="fal fa-angle-right"></i> Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="features-sub mt-30">
+                    <h5 class="title">Subscribe Now</h5>
+                    <p>Many aspects of computing and technology and the term is more recognizable than before.</p>
+                    <form>
+                        <div class="input-box">
+                            <input type="text" placeholder="Enter your email....">
+                            <button class="main-btn">Subscribe Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

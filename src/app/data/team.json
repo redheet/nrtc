@@ -1,0 +1,308 @@
+[
+    {
+        "id":1,
+        "img":"assets/images/leadership-1.jpg",
+        "post":"Founder",
+        "name":"Rosalina Devid",
+        "htmldesc":"<p class='pb-15'>Does any industry face a more complex audience journey and marketing sales process than B2B technology? Consider the number of people who influence a sale, the length of the decision-making cycle, the competing interests of the people who purchase, implement, manage, and use the technology. It’s a lot meaningful content here.</p><p>As a result, most of us need to know how to use computers. Our knowledge of computers will help us to tap into challenging career opportunities and enhance the quality of our lives. It is imperative that quality students be encouraged and motivated to study computers and become capable and responsible IT professionals. The education model needs to align itself with dynamically changing technology to meet the growing need for skilled IT manpower and deliver state-of-the-art, industry relevant and technology ready programs.​</p>",
+        "social": [
+            {
+                "icon": "fab fa-facebook-f",
+                "url": "/",
+                "title": "Facebook"
+            },
+            {
+                "icon": "fab fa-twitter",
+                "url": "/",
+                "title": "Twitter"
+            },
+            {
+                "icon": "fab fa-behance",
+                "url": "/",
+                "title": "Behance"
+            },
+            {
+                "icon": "fab fa-linkedin-in",
+                "url": "/",
+                "title": "LinkedIn"
+            },
+            {
+                "icon": "fab fa-instagram",
+                "url": "/",
+                "title": "Instagram"
+            }
+        ]
+    },
+    {
+        "id":2,
+        "img":"assets/images/leadership-2.jpg",
+        "post":"CEO",
+        "name":"Kemina Dvlin",
+        "htmldesc":"<p class='pb-15'>Does any industry face a more complex audience journey and marketing sales process than B2B technology? Consider the number of people who influence a sale, the length of the decision-making cycle, the competing interests of the people who purchase, implement, manage, and use the technology. It’s a lot meaningful content here.</p><p>As a result, most of us need to know how to use computers. Our knowledge of computers will help us to tap into challenging career opportunities and enhance the quality of our lives. It is imperative that quality students be encouraged and motivated to study computers and become capable and responsible IT professionals. The education model needs to align itself with dynamically changing technology to meet the growing need for skilled IT manpower and deliver state-of-the-art, industry relevant and technology ready programs.​</p>",
+        "social": [
+            {
+                "icon": "fab fa-facebook-f",
+                "url": "/",
+                "title": "Facebook"
+            },
+            {
+                "icon": "fab fa-twitter",
+                "url": "/",
+                "title": "Twitter"
+            },
+            {
+                "icon": "fab fa-behance",
+                "url": "/",
+                "title": "Behance"
+            },
+            {
+                "icon": "fab fa-linkedin-in",
+                "url": "/",
+                "title": "LinkedIn"
+            },
+            {
+                "icon": "fab fa-instagram",
+                "url": "/",
+                "title": "Instagram"
+            }
+        ]
+    },
+    {
+        "id":3,
+        "img":"assets/images/leadership-3.jpg",
+        "post":"Marketer",
+        "name":"Yellow D. Ballow",
+        "htmldesc":"<p class='pb-15'>Does any industry face a more complex audience journey and marketing sales process than B2B technology? Consider the number of people who influence a sale, the length of the decision-making cycle, the competing interests of the people who purchase, implement, manage, and use the technology. It’s a lot meaningful content here.</p><p>As a result, most of us need to know how to use computers. Our knowledge of computers will help us to tap into challenging career opportunities and enhance the quality of our lives. It is imperative that quality students be encouraged and motivated to study computers and become capable and responsible IT professionals. The education model needs to align itself with dynamically changing technology to meet the growing need for skilled IT manpower and deliver state-of-the-art, industry relevant and technology ready programs.​</p>",
+        "social": [
+            {
+                "icon": "fab fa-facebook-f",
+                "url": "/",
+                "title": "Facebook"
+            },
+            {
+                "icon": "fab fa-twitter",
+                "url": "/",
+                "title": "Twitter"
+            },
+            {
+                "icon": "fab fa-behance",
+                "url": "/",
+                "title": "Behance"
+            },
+            {
+                "icon": "fab fa-linkedin-in",
+                "url": "/",
+                "title": "LinkedIn"
+            },
+            {
+                "icon": "fab fa-instagram",
+                "url": "/",
+                "title": "Instagram"
+            }
+        ]
+    },
+    {
+        "id":4,
+        "img":"assets/images/leadership-4.jpg",
+        "post":"Founder",
+        "name":"Rosalina Devid",
+        "htmldesc":"<p class='pb-15'>Does any industry face a more complex audience journey and marketing sales process than B2B technology? Consider the number of people who influence a sale, the length of the decision-making cycle, the competing interests of the people who purchase, implement, manage, and use the technology. It’s a lot meaningful content here.</p><p>As a result, most of us need to know how to use computers. Our knowledge of computers will help us to tap into challenging career opportunities and enhance the quality of our lives. It is imperative that quality students be encouraged and motivated to study computers and become capable and responsible IT professionals. The education model needs to align itself with dynamically changing technology to meet the growing need for skilled IT manpower and deliver state-of-the-art, industry relevant and technology ready programs.​</p>",
+        "social": [
+            {
+                "icon": "fab fa-facebook-f",
+                "url": "/",
+                "title": "Facebook"
+            },
+            {
+                "icon": "fab fa-twitter",
+                "url": "/",
+                "title": "Twitter"
+            },
+            {
+                "icon": "fab fa-behance",
+                "url": "/",
+                "title": "Behance"
+            },
+            {
+                "icon": "fab fa-linkedin-in",
+                "url": "/",
+                "title": "LinkedIn"
+            },
+            {
+                "icon": "fab fa-instagram",
+                "url": "/",
+                "title": "Instagram"
+            }
+        ]
+    },
+    {
+        "id":5,
+        "img":"assets/images/leadership-5.jpg",
+        "post":"CEO",
+        "name":"Kemina Dvlin",
+        "htmldesc":"<p class='pb-15'>Does any industry face a more complex audience journey and marketing sales process than B2B technology? Consider the number of people who influence a sale, the length of the decision-making cycle, the competing interests of the people who purchase, implement, manage, and use the technology. It’s a lot meaningful content here.</p><p>As a result, most of us need to know how to use computers. Our knowledge of computers will help us to tap into challenging career opportunities and enhance the quality of our lives. It is imperative that quality students be encouraged and motivated to study computers and become capable and responsible IT professionals. The education model needs to align itself with dynamically changing technology to meet the growing need for skilled IT manpower and deliver state-of-the-art, industry relevant and technology ready programs.​</p>",
+        "social": [
+            {
+                "icon": "fab fa-facebook-f",
+                "url": "/",
+                "title": "Facebook"
+            },
+            {
+                "icon": "fab fa-twitter",
+                "url": "/",
+                "title": "Twitter"
+            },
+            {
+                "icon": "fab fa-behance",
+                "url": "/",
+                "title": "Behance"
+            },
+            {
+                "icon": "fab fa-linkedin-in",
+                "url": "/",
+                "title": "LinkedIn"
+            },
+            {
+                "icon": "fab fa-instagram",
+                "url": "/",
+                "title": "Instagram"
+            }
+        ]
+    },
+    {
+        "id":6,
+        "img":"assets/images/leadership-6.jpg",
+        "post":"Marketer",
+        "name":"Yellow D. Ballow",
+        "htmldesc":"<p class='pb-15'>Does any industry face a more complex audience journey and marketing sales process than B2B technology? Consider the number of people who influence a sale, the length of the decision-making cycle, the competing interests of the people who purchase, implement, manage, and use the technology. It’s a lot meaningful content here.</p><p>As a result, most of us need to know how to use computers. Our knowledge of computers will help us to tap into challenging career opportunities and enhance the quality of our lives. It is imperative that quality students be encouraged and motivated to study computers and become capable and responsible IT professionals. The education model needs to align itself with dynamically changing technology to meet the growing need for skilled IT manpower and deliver state-of-the-art, industry relevant and technology ready programs.​</p>",
+        "social": [
+            {
+                "icon": "fab fa-facebook-f",
+                "url": "/",
+                "title": "Facebook"
+            },
+            {
+                "icon": "fab fa-twitter",
+                "url": "/",
+                "title": "Twitter"
+            },
+            {
+                "icon": "fab fa-behance",
+                "url": "/",
+                "title": "Behance"
+            },
+            {
+                "icon": "fab fa-linkedin-in",
+                "url": "/",
+                "title": "LinkedIn"
+            },
+            {
+                "icon": "fab fa-instagram",
+                "url": "/",
+                "title": "Instagram"
+            }
+        ]
+    },
+    {
+        "id":7,
+        "img":"assets/images/leadership-7.jpg",
+        "post":"Founder",
+        "name":"Rosalina Devid",
+        "htmldesc":"<p class='pb-15'>Does any industry face a more complex audience journey and marketing sales process than B2B technology? Consider the number of people who influence a sale, the length of the decision-making cycle, the competing interests of the people who purchase, implement, manage, and use the technology. It’s a lot meaningful content here.</p><p>As a result, most of us need to know how to use computers. Our knowledge of computers will help us to tap into challenging career opportunities and enhance the quality of our lives. It is imperative that quality students be encouraged and motivated to study computers and become capable and responsible IT professionals. The education model needs to align itself with dynamically changing technology to meet the growing need for skilled IT manpower and deliver state-of-the-art, industry relevant and technology ready programs.​</p>",
+        "social": [
+            {
+                "icon": "fab fa-facebook-f",
+                "url": "/",
+                "title": "Facebook"
+            },
+            {
+                "icon": "fab fa-twitter",
+                "url": "/",
+                "title": "Twitter"
+            },
+            {
+                "icon": "fab fa-behance",
+                "url": "/",
+                "title": "Behance"
+            },
+            {
+                "icon": "fab fa-linkedin-in",
+                "url": "/",
+                "title": "LinkedIn"
+            },
+            {
+                "icon": "fab fa-instagram",
+                "url": "/",
+                "title": "Instagram"
+            }
+        ]
+    },
+    {
+        "id":8,
+        "img":"assets/images/leadership-8.jpg",
+        "post":"CEO",
+        "name":"Kemina Dvlin",
+        "htmldesc":"<p class='pb-15'>Does any industry face a more complex audience journey and marketing sales process than B2B technology? Consider the number of people who influence a sale, the length of the decision-making cycle, the competing interests of the people who purchase, implement, manage, and use the technology. It’s a lot meaningful content here.</p><p>As a result, most of us need to know how to use computers. Our knowledge of computers will help us to tap into challenging career opportunities and enhance the quality of our lives. It is imperative that quality students be encouraged and motivated to study computers and become capable and responsible IT professionals. The education model needs to align itself with dynamically changing technology to meet the growing need for skilled IT manpower and deliver state-of-the-art, industry relevant and technology ready programs.​</p>",
+        "social": [
+            {
+                "icon": "fab fa-facebook-f",
+                "url": "/",
+                "title": "Facebook"
+            },
+            {
+                "icon": "fab fa-twitter",
+                "url": "/",
+                "title": "Twitter"
+            },
+            {
+                "icon": "fab fa-behance",
+                "url": "/",
+                "title": "Behance"
+            },
+            {
+                "icon": "fab fa-linkedin-in",
+                "url": "/",
+                "title": "LinkedIn"
+            },
+            {
+                "icon": "fab fa-instagram",
+                "url": "/",
+                "title": "Instagram"
+            }
+        ]
+    },
+    {
+        "id":9,
+        "img":"assets/images/leadership-9.jpg",
+        "post":"Marketer",
+        "name":"Yellow D. Ballow",
+        "htmldesc":"<p class='pb-15'>Does any industry face a more complex audience journey and marketing sales process than B2B technology? Consider the number of people who influence a sale, the length of the decision-making cycle, the competing interests of the people who purchase, implement, manage, and use the technology. It’s a lot meaningful content here.</p><p>As a result, most of us need to know how to use computers. Our knowledge of computers will help us to tap into challenging career opportunities and enhance the quality of our lives. It is imperative that quality students be encouraged and motivated to study computers and become capable and responsible IT professionals. The education model needs to align itself with dynamically changing technology to meet the growing need for skilled IT manpower and deliver state-of-the-art, industry relevant and technology ready programs.​</p>",
+        "social": [
+            {
+                "icon": "fab fa-facebook-f",
+                "url": "/",
+                "title": "Facebook"
+            },
+            {
+                "icon": "fab fa-twitter",
+                "url": "/",
+                "title": "Twitter"
+            },
+            {
+                "icon": "fab fa-behance",
+                "url": "/",
+                "title": "Behance"
+            },
+            {
+                "icon": "fab fa-linkedin-in",
+                "url": "/",
+                "title": "LinkedIn"
+            },
+            {
+                "icon": "fab fa-instagram",
+                "url": "/",
+                "title": "Instagram"
+            }
+        ]
+    }
+]

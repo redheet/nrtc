@@ -1,0 +1,20 @@
+<div class="leadership-area padding gray-bg pt-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6" *ngFor="let item of team  | paginate: { itemsPerPage: 6, currentPage: page }">
+                <div class="leadership-item mt-50">
+                    <img [src]="item.img" [alt]="item.name">
+                    <div class="leadership-content">
+                        <h5 class="title"><a routerLink="/team-details/{{item.id}}">{{item.name}}</a></h5>
+                        <span>{{item.post}}</span>
+                    </div>
+                </div> <!-- leadership item -->
+            </div>
+        </div> <!-- row -->
+        <div class="pagination justify-content-center mt-30">
+            <pagination-controls (pageChange)="page = $event" responsive="true"
+            previousLabel="<"
+            nextLabel=">"></pagination-controls>
+        </div>
+    </div> <!-- container -->
+</div>

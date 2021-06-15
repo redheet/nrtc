@@ -1,0 +1,113 @@
+
+
+
+/*===========================
+    6.PORTFOLIO css 
+===========================*/
+
+.portfolio-area{
+	padding-bottom: 85px;
+	margin-top: -250px;
+	overflow: hidden;
+	@media #{$lg} {
+		margin-top: -196px;
+	}
+	@media #{$md} {
+		margin-top: -223px;
+	}
+	@media #{$xs} {
+		margin-top: -189px;
+	}
+	@media #{$sm} {
+		margin-top: -345px;
+	}
+	& .single-portfolio{
+		& .portfolio-thumb{
+			& img{
+				width: 100%;
+			}
+		}
+		& .portfolio-content{
+			padding: 40px 40px;
+			box-shadow: 0px 8px 16px 0px rgba(60, 110, 203, 0.1);
+			@media #{$lg} {
+				padding: 40px 20px;
+			}
+			@media #{$xs} {
+				padding: 40px 20px;
+			}
+			@media #{$sm} {
+				padding: 40px 40px;
+			}
+			& span{
+				font-size: 14px;
+				font-weight: 700;
+				text-transform: uppercase;
+				color: $theme-color;
+				letter-spacing: 2px;
+				padding-bottom: 5px;
+			}
+			& .title{
+				font-size: 23px;
+				line-height: 34px;
+				padding-bottom: 15px;
+				@media #{$lg} {
+					font-size: 19px;
+				}
+				@media #{$md} {
+					font-size: 19px;
+				}
+				@media #{$xs} {
+					font-size: 18px;
+				}
+				@media #{$sm} {
+					font-size: 26px;
+				}
+
+			}
+		}
+
+	}
+	& .portfolio-active{
+		& .slick-arrow{
+			position: absolute;
+			top: 54%;
+			height: 70px;
+			width: 70px;
+			text-align: center;
+			color: $white;
+			text-align: center;
+			line-height: 70px;
+			z-index: 99;
+			background-color: transparent;
+			border-radius: 50%;
+			border: 2px solid #f4f8ff;
+			cursor: pointer;
+			@include transition(0.3s);
+			&:hover{
+				background: $theme-color;
+				border-color: $theme-color;
+				& i{
+					color: $white;
+				}
+			}
+			& i{
+				color: $theme-color;
+				@include transition(0.3s);
+			}
+			&.prev{
+				left: -70px;
+				@media #{$lg} {
+					left: -270px;
+				}
+			}
+			&.next{
+				right: -70px;
+				@media #{$lg} {
+					right: -270px;
+				}
+			}
+		}
+	}
+}
+

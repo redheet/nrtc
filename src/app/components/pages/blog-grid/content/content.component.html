@@ -1,0 +1,28 @@
+<div class="blog-grid-area pt-90 pb-120">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-8" *ngFor="let item of blogpost | paginate: { itemsPerPage: 6, currentPage: page }">
+                <div class="blog-grid-item mt-30">
+                    <img [src]="item.gridimg" [alt]="item.title">
+                    <div class="blog-grid-overlay">
+                        <span *ngFor="let cat of getCategories(item.category) | slice:0:1">{{cat.title}}</span>
+                        <a routerLink="/blog-details/{{item.id}}">
+                            <h5 class="title">{{item.title | slice:0:30}}...</h5>
+                        </a>
+                        <ul>
+                            <li><i class="fal fa-calendar-alt"></i> <span> {{item.postdate}}</span></li>
+                            <li><i class="fal fa-heart"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="pagination justify-content-center mt-30">
+                    <pagination-controls (pageChange)="page = $event" responsive="true"
+                    previousLabel="<"
+                    nextLabel=">"></pagination-controls>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

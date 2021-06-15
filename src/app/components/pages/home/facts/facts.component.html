@@ -1,0 +1,68 @@
+<div class="our-choose-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-title mt-30">
+                    <span>Best agecy for you</span>
+                    <h2 class="title">Why Choose Our Solutions</h2>
+                </div> <!-- section title -->
+                <ngb-accordion [closeOthers]="true" activeIds="static-1">
+                    <ngb-panel id="static-1">
+                        <ng-template ngbPanelTitle>
+                            <i class="fal fa-long-arrow-right"></i>We Provide Professional Service
+                        </ng-template>
+                        <ng-template ngbPanelContent>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+                                quisquam</p>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="static-2">
+                        <ng-template ngbPanelTitle>
+                            <i class="fal fa-long-arrow-right"></i>Stay Up, Stay Running & Protected
+                        </ng-template>
+                        <ng-template ngbPanelContent>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+                                quisquam</p>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="static-3">
+                        <ng-template ngbPanelTitle>
+                            <i class="fal fa-long-arrow-right"></i>Our Experienced Experts
+                        </ng-template>
+                        <ng-template ngbPanelContent>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+                                quisquam</p>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="static-4">
+                        <ng-template ngbPanelTitle>
+                            <i class="fal fa-long-arrow-right"></i>Management Engineering System
+                        </ng-template>
+                        <ng-template ngbPanelContent>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+                                quisquam</p>
+                        </ng-template>
+                    </ngb-panel>
+                </ngb-accordion>
+                <!-- accordion -->
+            </div>
+            <div class="col-lg-6">
+                <div class="our-choose-counter-area mt-30">
+                    <div class="row">
+                        <div class="col-sm-6" *ngFor="let item of counterblock">
+                            <div class="our-choose-counter mt-55">
+                                <sub><span class="counter">{{item.value}}</span> <sup>+</sup></sub>
+                                <span>{{item.title}}</span>
+                                <p>{{item.text}}</p>
+                            </div>
+                        </div> <!-- our choose counter -->
+                    </div> <!-- row -->
+                </div>
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div>

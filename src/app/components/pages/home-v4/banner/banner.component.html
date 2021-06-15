@@ -1,0 +1,23 @@
+<div class="banner-area-3 bg_cover" style="background-image: url(assets/images/banner-bg-3.jpg);">
+    <div class="banner-overlay">
+        <img class="item-1" src="assets/images/banner-shape-1.png" alt="">
+        <img class="item-2" src="assets/images/banner-shape-2.png" alt="">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="banner-content text-center">
+                        <span>Get Quality Item & Goods</span>
+                        <h1 class="title">IT Solutions</h1>
+                        <p>Make your products with good & professionals</p>
+                    </div> <!-- banner content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </div>
+</div>
+<ngx-slick-carousel #slickModal="slick-carousel" [config]="settings" class="brand-area brand-active"> 
+    <!-- brand item -->
+    <div ngxSlickItem class="brand-item" *ngFor="let item of brands">
+        <img [src]="item.darkimg" [alt]="item.title">
+    </div> <!-- brand item -->
+</ngx-slick-carousel>

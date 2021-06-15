@@ -1,0 +1,49 @@
+<div class="blog-standard-area pt-90 pb-120">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="blog-standard">
+                    <div class="single-blog-standard mt-30" *ngFor="let item of blogpost | paginate: { itemsPerPage: 3, currentPage: page }">
+                        <div class="blog-standard-thumb">
+                            <img [src]="item.gridimg" [alt]="item.title">
+                        </div>
+                        <div class="blog-standard-content">
+                            <a routerLink="/blog/cat/{{cat.id}}" *ngFor="let cat of getCategory(item.category)">
+                                <span>{{cat.title}}</span>
+                            </a>
+                            
+                            <h2 class="title">{{item.title}}</h2>
+                            <ul>
+                                <li><i class="fal fa-eye"></i> {{item.views}} Views</li>
+                                <li><i class="fal fa-comments"></i> {{item.reviews.length}} Comments</li>
+                                <li><i class="fal fa-calendar-alt"></i> {{item.postdate}}</li>
+                            </ul>
+                            <p>{{item.shortdesc}}</p>
+                            <div class="blog-flex">
+                                <div class="blog-left" *ngFor="let author of getAuthor(item.author)">
+                                    <p><span>by</span> <a routerLink="/blog/author/{{author.id}}">{{author.name}}</a></p>
+                                    <img [src]="author.img" [alt]="author.name">
+                                </div>
+                                <div class="blog-right">
+                                    <a routerLink="/blog-details/{{item.id}}"><i class="fal fa-arrow-right"></i>Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="pagination justify-content-center mt-30">
+                            <pagination-controls (pageChange)="page = $event" responsive="true"
+                            previousLabel="<"
+                            nextLabel=">"></pagination-controls>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8">
+                <app-blogsidebar></app-blogsidebar>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,63 @@
+<header class="header-area header-area-2">
+    <div class="header-top pl-30 pr-30">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-sm-7">
+                <div class="header-left-side text-center text-sm-left">
+                    <ul>
+                        <li><a href="#"><i class="fal fa-envelope"></i> info@example.com</a></li>
+                        <li><a href="#"><i class="fal fa-phone"></i> 786 875 864 75 7</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-5">
+                <div class="header-right-social text-center text-sm-right">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-nav">
+        <div class="navigation" id="can-sticky">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand" routerLink="/home-v2"><img src="assets/images/logo-2.png" alt=""></a> <!-- logo -->
+                <button class="navbar-toggler" type="button" [ngClass]="navmethod ? '' : 'active'" (click)="isMenuCollapsed = !isMenuCollapsed; toggleNav()">
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
+                </button> <!-- navbar toggler -->
+                <div class="collapse navbar-collapse sub-menu-bar" [ngbCollapse]="isMenuCollapsed">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item menu-item" [ngClass]="item.child == true ? 'has-menu' : ''"
+                            *ngFor="let item of navigation">
+                            <a href="javascript:void(0)" (click)="trigger(item)"
+                                *ngIf="item.child">{{item.linkText}}</a>
+                            <a routerLink="{{item.link}}" *ngIf="!item.child">{{item.linkText}}</a>
+                            <ul class="sub-menu" *ngIf="item.child" [ngClass]="item.open ? 'd-block' : ''">
+                                <li class="nav-item menu-item" [ngClass]="item.child == true ? 'has-menu' : ''"
+                                    *ngFor="let item of item.submenu">
+                                    <a href="javascript:void(0)" (click)="trigger(item)"
+                                        *ngIf="item.child">{{item.linkText}}</a>
+                                    <a routerLink="{{item.link}}" *ngIf="!item.child">{{item.linkText}}</a>
+                                    <ul class="sub-menu" *ngIf="item.child" [ngClass]="item.open ? 'd-block' : ''">
+                                        <li class="nav-item menu-item" *ngFor="let item of item.submenu">
+                                            <a routerLink="{{item.link}}">{{item.linkText}}</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> <!-- navbar collapse -->
+                <div class="navbar-btn mr-100">
+                    <a class="main-btn" routerLink="/contact">Get A Quote</a>
+                </div>
+            </nav>
+        </div> <!-- navigation -->
+    </div>
+</header>

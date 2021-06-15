@@ -1,0 +1,24 @@
+<div class="services-item-area pt-105 pb-120">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-title text-center">
+                    <h2 class="title">Our Services</h2>
+                    <p>Does any industry face a more complex audience journey and marketing sales process than B2B technology.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-8" *ngFor="let item of serviceblock | slice:0:6">
+                <div class="single-services-item mt-30">
+                    <img [src]="item.img" [alt]="item.title">
+                    <div class="services-overlay">
+                        <i [class]="item.icon"></i>
+                        <h4 class="title">{{item.title}}</h4>
+                        <p>{{item.shortdesc | slice:0:130}}</p>
+                    </div>
+                </div>  <!-- single services -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div>

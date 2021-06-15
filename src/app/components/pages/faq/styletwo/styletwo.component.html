@@ -1,0 +1,30 @@
+<div class="about-faq-area pb-100 gray-bg">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-2 order-lg-1">
+                <div class="faq-video-thumb">
+                    <img src="assets/images/faq-video-thumb.jpg" alt="">
+                    <a class="video-popup" href="#"><i class="fas fa-play"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+                <div class="about-faq-content">
+                    <span>FAQ</span>
+                    <h2 class="title">Get Every answer from here.</h2>
+                </div>
+                <div class="faq-accordion-3 mt-30">
+                    <ngb-accordion [closeOthers]="true" activeIds="static-1">
+                        <ngb-panel id="static-{{1+i}}" *ngFor="let item of faqs;let i = index">
+                            <ng-template ngbPanelTitle>
+                                <i class="fal fa-magic"></i> {{item.title}}
+                            </ng-template>
+                            <ng-template ngbPanelContent> 
+                                <p>{{item.text}}</p>
+                            </ng-template>
+                        </ngb-panel>
+                    </ngb-accordion>
+                </div> <!-- faq accordion -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div>

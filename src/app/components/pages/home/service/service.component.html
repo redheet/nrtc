@@ -1,0 +1,33 @@
+<div class="who-we-are-area pt-110 pb-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
+                <div class="section-title">
+                    <span>who we are</span>
+                    <h2 class="title">We Work Hard Play Hard Explore Creative Mmind</h2>
+                </div> <!-- section title -->
+            </div>
+            <div class="col-lg-6 offset-lg-1 wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0s">
+                <div class="section-title">
+                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem-quelaudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quiavoluptas sit aspernatur aut odit aut fugit, sed quia quuntur magni dolores eos ratione voluptatem sequi nesciunt eque porroe. </p>
+                </div> <!-- section title -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6" *ngFor="let item of serviceblock | slice:0:4">
+                <div class="what-we-do-item text-center mt-30">
+                    <i [class]="item.icon"></i>
+                    <h5 class="title">{{item.title}}</h5>
+                    <p>{{item.shortdesc | slice:0:50}}</p>
+                    <a routerLink="/service-details"><i class="fal fa-long-arrow-right"></i></a>
+                </div> <!-- what we do item -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+    <div class="what-we-are-shape-1">
+        <img src="assets/images/what-we-are-shape-1.png" alt="shape">
+    </div>
+    <div class="what-we-are-shape-2">
+        <img src="assets/images/what-we-are-shape-2.png" alt="shape">
+    </div>
+</div>

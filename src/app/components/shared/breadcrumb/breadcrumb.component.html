@@ -1,0 +1,25 @@
+<breadcrumb #parent>
+    <div class="page-title-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-title-item text-center">
+                        <ng-template ngFor let-route [ngForOf]="parent.breadcrumbs">
+                            <h2 class="title">{{ route.displayName }}</h2>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a routerLink="/">Home </a></li>
+                                    <li class="breadcrumb-item" *ngIf="!route.terminal">
+                                        <a href="" [routerLink]="[route.url]">{{ route.displayName }}</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" *ngIf="route.terminal">{{ route.displayName }}
+                                    </li>
+                                </ol>
+                            </nav>
+                        </ng-template>
+                    </div> <!-- page title -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </div>
+</breadcrumb>

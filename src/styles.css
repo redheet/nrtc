@@ -1,0 +1,293 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('./assets/css/nice-select.css');
+@import url('./assets/css/style.css');
+:focus {
+	outline: none;
+}
+@media (max-width:991px){
+	.navigation .navbar .navbar-nav .nav-item.has-menu>a:after{
+		content: "\f107";
+		font-family: "Font Awesome 5 Pro";
+		font-weight: 900;
+		display: block;
+		position: absolute;
+		right: 0;
+		height: 45px;
+		width: 45px;
+		top: 0;
+		z-index: 2;
+		background: transparent;
+		text-align: center;
+		line-height: 45px;
+		cursor: pointer;
+		font-size: 20px;
+	}
+	.header-nav .navigation.sticky .navbar .navbar-nav .nav-item a{
+		line-height: 40px;
+	}
+}
+.header-area-2.header-area-3 .header-nav .navigation .navbar .navbar-nav .nav-item .sub-menu li > a {
+    display: block;
+    padding: 8px 24px;
+    position: relative;
+    color: #4f79a9;
+	line-height: 30px;
+}
+.faq-area .faq-accordion.accordion {
+    width: 100%;
+    position: relative;
+}
+.faq-accordion-3 .accordion .card .card-header .btn-link,
+.faq-area .faq-accordion .accordion .card .card-header .btn-link,
+.faq-accordion-2 .accordion .card .card-header .btn-link,
+.our-choose-area .accordion .card .card-header .btn-link{
+	text-align: left;
+	border: none;
+	border-radius: 0;
+}
+.faq-accordion-3 .accordion .card .card-header .btn-link:focus,
+.faq-area .faq-accordion .accordion .card .card-header .btn-link:focus,
+.faq-accordion-2 .accordion .card .card-header .btn-link:focus,
+.our-choose-area .accordion .card .card-header .btn-link:focus{
+	box-shadow: none;
+}
+.features-area .single-features>i,
+.services-area .single-services>i{
+	font-size: 80px;
+	color: #0c59db;
+}
+.features-area .single-features .title{
+	font-size: 35px;
+}
+.portfolio-area .single-portfolio .portfolio-thumb img{
+	height: 250px;
+	object-fit: cover;
+}
+.blog-area .single-blog{
+	padding: 30px;
+}
+.blog-area .single-blog ul li{
+	padding-right: 10px;
+}
+.about-experience-area .single-experience img {
+    height: 400px;
+    object-fit: cover;
+}
+/* Pagination */
+pagination-template .ngx-pagination {
+	margin-top: 20px;
+	justify-content: center;
+	margin-bottom: 0;
+	display: flex;
+	padding-left: 0;
+	list-style: none;
+	border-radius: .25rem;
+}
+pagination-template .ngx-pagination li {
+	margin: 0;
+	position: relative;
+}
+pagination-template .ngx-pagination li.pagination-next,
+pagination-template .ngx-pagination li.pagination-previous {
+	padding: 0;
+	display: block;
+}
+pagination-template .ngx-pagination li.pagination-next span,
+pagination-template .ngx-pagination li.pagination-previous span,
+pagination-template .ngx-pagination li a {
+	border: 2px solid #f1fcff;
+    background-color: #f1fcff;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    position: relative;
+    margin-left: 7px;
+    margin-right: 7px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    line-height: 2;
+    text-align: center;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+pagination-template .ngx-pagination li.current {
+	color: #fff;
+	border: 2px solid #0c59db;
+	background-color: #0c59db;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0;
+	position: relative;
+    margin-left: 7px;
+    margin-right: 7px;
+    height: 50px;
+    width: 50px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	line-height: 2;
+	text-align: center;
+	border-radius: 50%;
+}
+pagination-template .ngx-pagination li.pagination-next::after,
+pagination-template .ngx-pagination li.pagination-next a:after,
+pagination-template .ngx-pagination li.pagination-previous a::before,
+pagination-template .ngx-pagination li.pagination-previous::before {
+	display: none!important;
+}
+/* Count down */
+
+.countdown {
+    justify-content: space-between!important;
+    flex-wrap: wrap;
+}
+.countdown .measurements {
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    border: 10px solid #f6fcff;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    padding-top: 75px;
+    flex: unset!important;
+}
+.countdown .measurements::before {
+    position: absolute;
+    content: '';
+    height: 108%;
+    width: 108%;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    left: -10px;
+    top: -10px;
+    z-index: -1;
+    border-left-color: #0c59db;
+    border-right-color: #0c59db;
+    transform: rotate(-45deg);
+}
+.countdown .measurements .measurements-number {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "GilroyBold";
+    color: #002249;
+    line-height: 50px;
+}
+.countdown .measurements .measurements-text {
+    font-weight: 700;
+    color: #69a1bb;
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .countdown .measurements {
+        height: 200px;
+        width: 200px;
+        padding-top: 50px;
+    }
+    .countdown .measurements::before {
+        height: 110%;
+        width: 110%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .countdown .measurements {
+        height: 150px;
+        width: 150px;
+        padding-top: 30px;
+    }
+    .countdown .measurements::before {
+        height: 114%;
+        width: 117%;
+    }
+}
+@media (max-width: 767px) {
+    .countdown {
+        justify-content: center!important;
+    }
+    .countdown .measurements {
+        height: 200px;
+        width: 200px;
+        margin: 20px 0;
+        padding-top: 50px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .countdown .measurements {
+        height: 200px;
+        width: 200px;
+        margin: 20px;
+        padding-top: 50px;
+    }
+    .countdown .measurements::before {
+        height: 111%;
+        width: 111%;
+    }
+    .countdown {
+        justify-content: space-between!important;
+    }
+}
+.shop-area .shop-top-bar .nice-select select{
+    border: none;
+    appearance: none;
+}
+.team-area .single-team .team-content .title>a,
+.leadership-area .leadership-item .leadership-content .title>a,
+.shop-details-area .shop-details-content .review ul li i {
+    color: #002249;
+}
+.shop-details-area .shop-details-content .review ul li i.active {
+    color: #ffb400;
+}
+.team-member-area .single-team-member .team-member-overlay .title>a{
+    color: #fff;
+}
+.blog-standard .single-blog-standard .blog-standard-content .blog-flex .blog-left img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.blog-standard .single-blog-standard .blog-standard-content .blog-flex .blog-left p a{
+    font-weight: 700;
+    color: #002249;
+    margin-left: 4px;
+}
+.blog-dteails-content .blog-details-top > a > span,
+.blog-standard .single-blog-standard .blog-standard-content > a > span {
+    background: #0c59db;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding: 0 15px;
+    line-height: 30px;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+.blog-sidebar-area .sidebar-feeds .sidebar-feeds-item img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.blog-sidebar-area .sidebar-instagram ul{
+    columns: 3;
+    flex-wrap: wrap;
+}
+.blog-sidebar-area .sidebar-tags ul li a{
+    padding: 0 16px;
+    margin: 0 3px 5px;
+}
+.blog-sidebar-area .blog-sidebar-item .sidebar-about-contnent img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.blog-dteails-content .blog-details-comments .blog-comments-area img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}

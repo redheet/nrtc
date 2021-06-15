@@ -1,0 +1,40 @@
+
+
+
+/*===========================
+    15.PROGRESS BAR css 
+===========================*/
+
+
+.Progress-bar-area{
+	& .Progress-bar-item{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		& canvas{
+			transform: rotate(90deg);
+		}
+		& .Progress-bar-content{
+			position: absolute;
+			top: 48%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			@media #{$lg} {
+				left: 50%;
+			}
+			& i{
+				color: $theme-color;
+				font-size: 70px;
+			}
+			& .title{
+				font-size: 70px;
+				color: #f2f8ff;
+				z-index: -1;
+				line-height: 0;
+				position: relative;
+				white-space: nowrap;
+			}
+		}
+
+	}
+}

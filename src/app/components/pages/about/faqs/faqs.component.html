@@ -1,0 +1,24 @@
+<div class="about-faq-area pb-100 bg_cover" style="background-image: url(assets/images/faq-bg.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="about-faq-content">
+                    <span>FAQ</span>
+                    <h2 class="title">Get Every answer from here.</h2>
+                </div>
+                <div class="faq-accordion-3 mt-30">
+                    <ngb-accordion [closeOthers]="true" activeIds="static-1">
+                        <ngb-panel id="static-{{1+i}}" *ngFor="let item of faqs;let i = index">
+                            <ng-template ngbPanelTitle>
+                                <i class="fal fa-magic"></i> {{item.title}}
+                            </ng-template>
+                            <ng-template ngbPanelContent> 
+                                <p>{{item.text}}</p>
+                            </ng-template>
+                        </ngb-panel>
+                    </ngb-accordion>
+                </div> <!-- faq accordion -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div>

@@ -1,0 +1,13 @@
+<div class="brand-2-area pb-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ngx-slick-carousel #slickModal="slick-carousel" [config]="settings" class="brand-active">
+                    <div ngxSlickItem class="brand-item" *ngFor="let item of brands">
+                        <img [src]="item.lightimg" [alt]="item.title">
+                    </div>
+                </ngx-slick-carousel> <!-- brand item -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div>

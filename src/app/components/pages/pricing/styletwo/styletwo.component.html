@@ -1,0 +1,35 @@
+<div class="services-plans-area services-plans-dark-area">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6">
+                <div class="services-title mb-50">
+                    <span>plans</span>
+                    <h2 class="title">Here is plans</h2>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="plans-tab-btn d-flex justify-content-md-end justify-content-start">
+                    <ul ngbNav #nav="ngbNav" class="nav nav-pills mb-3">
+                        <li [ngbNavItem]="1+i" *ngFor="let item of plans;let i = index">
+                            <a ngbNavLink>{{item.title}}</a>
+                            <ng-template ngbNavContent>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-3 col-md-6 col-sm-8 mt-30" *ngFor="let plan of item.data;let i = index">
+                                        <div class="plans-item bg_cover text-center" style="background-image: url(assets/images/plans-thumb.jpg);">
+                                            <b class="item-{{1+i}}">{{plan.name}}</b>
+                                            <h3 class="title">$ <span>{{plan.price | number:'1.0-0'}}</span></h3>
+                                            <span>{{plan.period}}</span>
+                                            <p>{{plan.shortdesc}}</p>
+                                            <a class="main-btn main-btn-2" routerLink="/contact">Purchase Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div [ngbNavOutlet]="nav"></div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="faq-area faq-area-3 pt-115">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 order-2 order-lg-1 d-none d-sm-block">
+                <div class="faq-thumb">
+                    <div class="faq-thumb-1 text-right">
+                        <img src="assets/images/faq-thumb-1.jpg" alt="">
+                    </div>
+                    <div class="faq-thumb-2">
+                        <img src="assets/images/faq-thumb-2.jpg" alt="">
+                    </div>
+                </div> <!-- faq thumb -->
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+                <div class="section-title text-left">
+                    <span>faq</span>
+                    <h2 class="title">Get Every Single Answers Here.</h2>
+                </div> <!-- section title -->
+                <div class="faq-accordion accordion">
+                    <ngb-accordion [closeOthers]="true" activeIds="static-1">
+                        <ngb-panel id="static-{{1+i}}" *ngFor="let item of faqs;let i = index">
+                            <ng-template ngbPanelTitle>
+                                {{item.title}}
+                            </ng-template>
+                            <ng-template ngbPanelContent>
+                                <p>{{item.text}}</p>
+                            </ng-template>
+                        </ngb-panel>
+                    </ngb-accordion>
+                </div><!-- faq accordion -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div>

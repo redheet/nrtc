@@ -1,0 +1,25 @@
+<div class="team-area gray-bg pt-115">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center">
+                    <span>team</span>
+                    <h2 class="title">Our Leadership</h2>
+                </div><!-- section title -->
+            </div>
+        </div> <!-- row -->
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6" *ngFor="let item of team | slice:0:8">
+                <div class="single-team mt-30">
+                    <div class="team-thumb">
+                        <img [src]="item.img" [alt]="item.name">
+                    </div>
+                    <div class="team-content text-center">
+                        <h5 class="title"><a routerLink="/team-details/{{item.id}}">{{item.name}}</a></h5>
+                        <span>{{item.post}}</span>
+                    </div>
+                </div> <!-- single team -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div>

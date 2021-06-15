@@ -1,0 +1,19 @@
+<div class="Progress-bar-area mt-90 mb-120">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-6" *ngFor="let item of progressbar">
+                <div class="Progress-bar-item mt-30" id="circle4">
+                    <circle-progress [percent]="item.value" [radius]="100" [outerStrokeWidth]="10" [innerStrokeWidth]="10"
+                        [outerStrokeColor]="'#006de8'" [innerStrokeColor]="'#f1f9ff'" [animation]="true" [space]="-10"
+                        [outerStrokeLinecap]="'round'" [animationDuration]="300" [showTitle]="false" [showUnits]="false"
+                        [showSubtitle]="false" [responsive]="true">
+                    </circle-progress>
+                    <div class="Progress-bar-content text-center">
+                        <i [class]="item.icon"></i>
+                        <h3 class="title"><span class="counter">{{item.countervalue}}</span></h3>
+                    </div>
+                </div> 
+            </div> <!-- Progress bar item -->
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div> 

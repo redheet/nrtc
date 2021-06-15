@@ -1,0 +1,34 @@
+<div class="asnwers-area pt-105 pb-100 gray-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-title-2">
+                    <h2 class="title">Get Single Answers</h2>
+                    <p>Does any industry face a more complex audience journey and marketing sales process than B2B technology.</p>
+                </div> <!-- section title 2 -->
+                <div class="faq-accordion-2 mt-30">
+                    <ngb-accordion [closeOthers]="true" activeIds="static-1">
+                        <ngb-panel id="static-{{1+i}}" *ngFor="let item of faqs;let i = index">
+                            <ng-template ngbPanelTitle>
+                                {{item.title}}
+                            </ng-template>
+                            <ng-template ngbPanelContent>
+                                <p>{{item.text}}</p>
+                            </ng-template>
+                        </ngb-panel>
+                    </ngb-accordion>
+                </div> <!-- faq accordion -->
+            </div>
+            <div class="col-lg-6">
+                <div class="answers-thumb">
+                    <div class="answers-thumb-1 text-right">
+                        <img src="assets/images/answers-thumb-1.jpg" alt="">
+                    </div>
+                    <div class="answers-thumb-2">
+                        <img src="assets/images/answers-thumb-2.jpg" alt="">
+                    </div>
+                </div> <!-- answers thumb -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- containter -->
+</div>

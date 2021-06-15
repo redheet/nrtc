@@ -1,0 +1,18 @@
+<div class="portfolio-area">
+    <div class="container">
+        <ngx-slick-carousel #slickModal="slick-carousel" [config]="settings" class="row portfolio-active">
+            <div ngxSlickItem class="col-lg-4" *ngFor="let item of case">
+                <div class="single-portfolio mb-30">
+                    <div class="portfolio-thumb">
+                        <img [src]="item.img" [alt]="item.title">
+                    </div> 
+                    <div class="portfolio-content">
+                        <span *ngFor="let category of getCategory(item.category) | slice:0:1">{{category.title}}</span>
+                        <h5 class="title">{{item.title}}</h5>
+                        <p>{{item.shortdesc | slice:0:95}}</p>
+                    </div>
+                </div> <!-- single portfolio -->
+            </div>
+        </ngx-slick-carousel> <!-- row -->
+    </div> <!-- container -->
+</div>

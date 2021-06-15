@@ -1,0 +1,75 @@
+
+
+
+/*===============================
+    30.BLOG GRID css 
+================================*/
+
+.blog-grid-area{
+	overflow: hidden;
+	& .blog-grid-item{
+		position: relative;
+		& img{
+			width: 100%;
+		}
+		& .blog-grid-overlay{
+			background-image: -moz-linear-gradient( -90deg, rgba(0,34,73,.1) 0%, rgba(0,34,73,0.01) 1%, rgba(0,34,73,.6) 100%);
+			background-image: -webkit-linear-gradient( -90deg, rgba(0,34,73,.1) 0%, rgba(0,34,73,0.01) 1%, rgba(0,34,73,.6) 100%);
+			background-image: -ms-linear-gradient( -90deg, rgba(0,34,73,.1) 0%, rgba(0,34,73,0.01) 1%, rgba(0,34,73,.6) 100%);
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			position: absolute;
+			padding: 40px;
+			@media #{$lg} {
+				padding: 20px;
+			}
+			@media #{$xs} {
+				padding: 20px;
+			}
+			@media #{$sm} {
+				padding: 40px;
+			}
+			& > span{
+				background: $theme-color;
+				color: $white;
+				line-height: 26px;
+				padding: 0 15px;
+				font-size: 12px;
+				font-weight: 700;
+			}
+			& .title{
+				font-size: 24px;
+				color: $white;
+				padding-top: 165px;
+				@media #{$lg} {
+					font-size: 22px;
+					padding-top: 137px;
+				}
+				@media #{$md} {
+					padding-top: 130px;
+				}
+				@media #{$xs} {
+					padding-top: 130px;
+					font-size: 20px;
+				}
+				@media #{$sm} {
+					padding-top: 135px;
+					font-size: 24px;
+				}
+			}
+			& ul{
+				display: flex;
+				justify-content: space-between;
+				padding-top: 10px;
+				& li{
+					display: inline-block;
+					color: $white;
+					opacity: .7;
+				}
+			}
+		}
+	}
+}
+

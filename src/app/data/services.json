@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "img":"assets/images/services-thumb-1.jpg",
+        "icon":"fal fa-eye-dropper",
+        "title":"UI/UX Design",
+        "shortdesc":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiuto-tam rem aperiam eaque ipsa quae inventore"
+    },
+    {
+        "id":2,
+        "img":"assets/images/services-thumb-2.jpg",
+        "icon":"fal fa-gavel",
+        "title":"IT Consultancy",
+        "shortdesc":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiuto-tam rem aperiam eaque ipsa quae inventore"
+    },
+    {
+        "id":3,
+        "img":"assets/images/services-thumb-3.jpg",
+        "icon":"fal fa-map-marked-alt",
+        "title":"Technology Prof.",
+        "shortdesc":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiuto-tam rem aperiam eaque ipsa quae inventore"
+    },
+    {
+        "id":4,
+        "img":"assets/images/services-thumb-4.jpg",
+        "icon":"fal fa-hurricane",
+        "title":"Web Development",
+        "shortdesc":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiuto-tam rem aperiam eaque ipsa quae inventore"
+    },
+    {
+        "id":5,
+        "img":"assets/images/services-thumb-5.jpg",
+        "icon":"fal fa-bezier-curve",
+        "title":"App Development",
+        "shortdesc":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiuto-tam rem aperiam eaque ipsa quae inventore"
+    },
+    {
+        "id":6,
+        "img":"assets/images/services-thumb-6.jpg",
+        "icon":"fal fa-umbrella",
+        "title":"Game Design",
+        "shortdesc":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiuto-tam rem aperiam eaque ipsa quae inventore"
+    }
+]

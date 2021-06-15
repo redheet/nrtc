@@ -1,0 +1,35 @@
+<!--====== SERVICES TITLE PART START ======-->
+<div class="services-title-area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="services-title-item text-center">
+                    <div class="ring-shape"></div>
+                    <span>Our latest services</span>
+                    <h3 class="title">We Offer Better Soluation For Your IT Business</h3>
+                </div> <!-- services title item -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div>
+<!--====== SERVICES TITLE PART ENDS ======-->
+<!--====== LATEST SERVICES PART START ======-->
+<div class="latest-services-area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-9" *ngFor="let item of serviceblock | slice:0:6">
+                <div class="single-services mt-30 mb-55">
+                    <div class="services-thumb">
+                        <img [src]="item.img" [alt]="item.title">
+                    </div>
+                    <div class="services-content">
+                        <h4 class="title">{{item.title}}</h4>
+                        <p>{{item.shortdesc | slice:0:140}}</p>
+                        <a routerLink="/service-details">Read More <i class="fal fa-long-arrow-right"></i></a>
+                    </div>
+                </div> <!-- single services -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div>
+<!--====== LATEST SERVICES PART ENDS ======-->

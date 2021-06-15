@@ -1,0 +1,23 @@
+<div class="news-area news-area-2">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-9" *ngFor="let item of caseblock | paginate: { itemsPerPage: 6, currentPage: page }">
+                <div class="single-news mt-30">
+                    <img [src]="item.img" [alt]="item.title">
+                    <div class="single-news-overlay">
+                        <span *ngFor="let cat of getCategory(item.category) | slice:0:1">{{cat.title}}</span>
+                        <h5 class="title"><a routerLink="/case-details/{{item.id}}">{{item.title}}</a></h5>
+                        <a routerLink="/case-details/{{item.id}}"><i class="fal fa-long-arrow-right"></i></a>
+                    </div>
+                </div> <!-- single news -->
+            </div>
+            <div class="col-lg-8">
+                <div class="pagination justify-content-center mt-30">
+                    <pagination-controls (pageChange)="page = $event" responsive="true"
+                    previousLabel="<"
+                    nextLabel=">"></pagination-controls>
+                </div>
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div>

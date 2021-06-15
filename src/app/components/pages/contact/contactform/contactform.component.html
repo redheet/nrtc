@@ -1,0 +1,37 @@
+<div class="get-in-touch-area get-in-touch-area-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-title text-left">
+                    <span>Get In Touch</span>
+                    <h2 class="title">Estimate For Your Projects.</h2>
+                </div> <!-- section title -->
+                <div class="form-area">
+                    <form id="contact-form" (submit)="sendEmail($event)">
+                        <ngb-alert *ngIf="formResponse" [innerHTML]="formResponse" [type]="formStatus"></ngb-alert>
+                        <div class="input-box mt-45">
+                            <input type="text" placeholder="Enter your name" name="from_name" required>
+                            <i class="fal fa-user"></i>
+                        </div>
+                        <div class="input-box mt-20">
+                            <input type="email" placeholder="Enter your email" name="to_email" required>
+                            <i class="fal fa-envelope"></i>
+                        </div>
+                        <div class="input-box mt-20">
+                            <textarea cols="30" rows="10" placeholder="Enter your message" name="message_html" required></textarea>
+                            <i class="fal fa-edit"></i>
+                            <button class="main-btn" type="submit">Submit Now</button>
+                        </div>
+                    </form>
+                    <p class="form-message"></p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="get-map d-none d-lg-block mt-40">
+                    <img src="assets/images/contact-thumb.jpg" alt="video play">
+                    <a class="video-popup" href="#"><i class="fas fa-play"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="team-member-area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-title text-center">
+                    <span>our team member</span>
+                    <h2 class="title">Meet Our Exclusive Leadership</h2>
+                </div>
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-6" *ngFor="let item of teamblock | slice:0:6">
+                <div class="single-team-member mt-30">
+                    <img [src]="item.img" [alt]="item.name">
+                    <div class="team-member-overlay">
+                        <ul>
+                            <li *ngFor="let item of item.social">
+                                <a routerLink="{{item.url}}">
+                                    <i [class]="item.icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <h4 class="title"><a routerLink="/team-details/{{item.id}}">{{item.name}}</a></h4>
+                        <span>{{item.post}}</span>
+                    </div>
+                </div> <!-- single team member -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container fluid -->
+</div>

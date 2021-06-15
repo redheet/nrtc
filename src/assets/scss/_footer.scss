@@ -1,0 +1,228 @@
+
+
+
+/*===========================
+    11.FOOTER css 
+===========================*/
+
+
+.footer-area{
+	& .widget-item-1{
+		& p{
+			padding-right: 30px;
+			padding-top: 30px;
+			@media #{$lg} {
+				padding-right: 0;
+			}
+			@media #{$md} {
+				padding-right: 0;
+			}
+			@media #{$xs} {
+				padding-right: 0;
+			}
+		}
+	}
+	& .widget-item-2{
+		.title{
+			text-transform: capitalize;
+			font-weight: 700;
+			font-size: 34px;
+			margin-top: -8px;
+			padding-bottom: 17px;
+		}
+		& .footer-list{
+			display: flex;
+			& ul{
+				display: inline-block;
+				& li{
+					line-height: 50px;
+					margin-right: 40px;
+					@media #{$lg} {
+						margin-right: 20px;
+					}
+					& a{
+						color: $text-color;
+						@include transition(0.3s);
+						& i{
+							padding-right: 6px;
+						}
+						&:hover{
+							color: $theme-color;
+						}
+					}
+				}
+			}
+		}
+		&.widget-item-3{
+			& ul{
+				margin-top: 7px;
+				& li{
+					line-height: 36px;
+					font-size: 20px;
+					font-weight: 400;
+					@media #{$lg} {
+						font-size: 18px;
+					}
+					@media #{$xs} {
+						font-size: 18px;
+					}
+				}
+			}
+			& p{
+				padding-top: 23px;
+				@media #{$md} {
+					padding-right: 40px;
+				}
+				& span{
+					font-weight: 700;
+					color: $heading-color;
+				}
+
+			}
+			& a{
+				margin-top: 8px;
+				color: $text-color;
+				font-weight: 700;
+				& i{
+					padding-right: 6px;
+				}
+				&:hover{
+					color: $theme-color;
+					@include transition(0.3s);
+				}
+			}
+		}
+	}
+	& .footer-copyright{
+		border-top: 1px solid #e2edf3;
+		margin-top: 100px;
+		text-align: center;
+		& p{
+			& span{
+				font-weight: 700;
+				color: $heading-color;
+				line-height: 55px;
+			}
+		}
+	}
+	&.footer-area-2{
+		overflow: hidden;
+		& .footer-overlay{
+			background-color: rgba(0, 21, 46,.9);
+			padding-top: 88px;
+			& .widget-item-1 {
+				& p{
+					color: #c2d1e2;
+				}
+			}
+			& .widget-item-2 {
+				& .title{
+					color: $white;
+				}
+				& .footer-list {
+					& ul{
+						& li{
+							& a{
+								color: #c2d1e2;
+							}
+						}
+					}
+				}
+				&.widget-item-3{
+					& ul{
+						& li{
+							color: #c2d1e2;
+						}
+					}
+					& p{
+						color: #c2d1e2;
+						& span{
+							color: $white;
+						}
+					}
+					& a{
+						color: $theme-color;
+					}
+				}
+			}
+		}
+		& .footer-copyright{
+			border-top: 1px solid rgba(255, 255, 255,.2);
+			& p{
+				color: #c2d1e2;
+				& span{
+					color: $white;
+				}
+			}
+		}
+		& .shape-1{
+			position: absolute;
+			left: -50%;
+			bottom: -85%;
+			height: 700px;
+			width: 700px;
+			border-radius: 50%;
+			background-color: rgba(0, 109, 232,.4);
+
+		}
+		& .shape-2{
+			position: absolute;
+			right: -10%;
+			bottom: 14%;
+			height: 105px;
+			width: 105px;
+			border-radius: 50%;
+			background-color: rgb(0, 109, 232);
+			@media #{$xs} {
+				right: -30%;
+			}
+			@media #{$sm} {
+				bottom: 5%;
+			}
+
+		}
+		& .shape-3{
+			position: absolute;
+			right: -3%;
+			bottom: 33%;
+			height: 33px;
+			width: 33px;
+			border-radius: 50%;
+			background-color: rgba(0, 109, 232,.4);
+			background-color: rgb(0, 232, 207);
+
+		}
+		&.footer-area-3{
+			& .footer-overlay{
+				background-color: rgba(0, 21, 46, 1);
+			}
+		}
+        &.footer-area-1{
+            & .footer-overlay{
+                background-color: rgba(0, 21, 46, 1);
+            }
+        }
+	}
+}
+
+/*===========================
+    BACK TO TOP CSS
+===========================*/
+
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: none;
+    z-index: 999999;
+
+    & a {
+        color: $white;
+        background: $theme-color;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px;
+    }
+}

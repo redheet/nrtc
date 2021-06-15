@@ -1,0 +1,62 @@
+[
+    {
+        "id":1,
+        "title":"Monthly",
+        "data":[
+            {
+                "name":"Early Birds",
+                "price":9,
+                "period":"Per Month",
+                "shortdesc":"The functional goal of technical content is to help people use a product successfully."
+            },
+            {
+                "name":"Team",
+                "price":32,
+                "period":"Per Month",
+                "shortdesc":"The functional goal of technical content is to help people use a product successfully."
+            },
+            {
+                "name":"Personal",
+                "price":69,
+                "period":"Per Month",
+                "shortdesc":"The functional goal of technical content is to help people use a product successfully."
+            },
+            {
+                "name":"Platinum",
+                "price":99,
+                "period":"Per Month",
+                "shortdesc":"The functional goal of technical content is to help people use a product successfully."
+            }
+        ]
+    },
+    {
+        "id":3,
+        "title":"Yearly",
+        "data":[
+            {
+                "name":"Early Birds",
+                "price":56,
+                "period":"Per Year",
+                "shortdesc":"The functional goal of technical content is to help people use a product successfully."
+            },
+            {
+                "name":"Team",
+                "price":99,
+                "period":"Per Year",
+                "shortdesc":"The functional goal of technical content is to help people use a product successfully."
+            },
+            {
+                "name":"Personal",
+                "price":133,
+                "period":"Per Year",
+                "shortdesc":"The functional goal of technical content is to help people use a product successfully."
+            },
+            {
+                "name":"Platinum",
+                "price":599,
+                "period":"Per Year",
+                "shortdesc":"The functional goal of technical content is to help people use a product successfully."
+            }
+        ]
+    }
+]

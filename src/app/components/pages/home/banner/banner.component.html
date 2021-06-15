@@ -1,0 +1,18 @@
+<ngx-slick-carousel #slickModal="slick-carousel" [config]="settings" class="banner-active">
+    <div ngxSlickItem class="single-banner bg_cover" [style.background-image]="'url('+item.img+')'" *ngFor="let item of banner">
+        <div class="banner-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="banner-content">
+                            <span>{{item.subtitle}}</span>
+                            <h1 class="title" [innerHtml]="item.title"></h1>
+                            <p>{{item.text}} </p>
+                            <a class="main-btn" routerLink="/services">Our Services <i class="fal fa-long-arrow-right"></i></a>
+                        </div> <!-- banner content -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div>
+    </div>
+</ngx-slick-carousel>

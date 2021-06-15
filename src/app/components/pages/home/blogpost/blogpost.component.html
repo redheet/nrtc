@@ -1,0 +1,32 @@
+<div class="latest-news-area gray-bg">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-title text-center">
+                    <span>latest news</span>
+                    <h2 class="title">Read Our Latest News & Blog</h2>
+                </div> <!-- sction title -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+    <div class="letast-news-grid white-bg  ml-40 mr-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="latest-news">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6" *ngFor="let item of blogblock | slice:0:3">
+                                <div class="letest-news-item mt-30">
+                                    <span>By <span *ngFor="let user of getAuthor(item.author)">{{user.name}}</span>, {{item.postdate}}</span>
+                                    <h4 class="title"><a routerLink="/blog-details">{{item.title}}</a></h4>
+                                    <p>{{item.shortdesc | slice:0:135}}...</p>
+                                    <a class="main-btn" routerLink="/blog-details/{{item.id}}">Read More <i class="fal fa-long-arrow-right"></i></a>
+                                </div> <!-- lesast news item -->
+                            </div>
+                        </div>
+                    </div> <!-- latest news -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </div>
+</div>

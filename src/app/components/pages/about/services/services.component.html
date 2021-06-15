@@ -1,0 +1,31 @@
+<div class="about-experience-area pb-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="experience-item">
+                    <span>25 Years Of Experience</span>
+                    <h2 class="title">Not only explore for job done.</h2>
+                </div> <!-- experience item -->
+            </div>
+            <div class="col-lg-6 offset-lg-1">
+                <div class="experience-item">
+                    <p>Does any industry face a more complex audience journey and marketing sales process than B2B technology? Consider the number of people who influence a sale, the length of the decision-making cycle, the competing interests of the people who purchase, implement, manage, and use the technology. It’s a lot meaningful content here.</p>
+                    <a routerLink="/about">Read More</a>
+                </div> <!-- experience item -->
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-8" *ngFor="let item of services | slice:0:3">
+                <div class="single-experience mt-30">
+                    <img [src]="item.img" [alt]="item.title">
+                    <div class="experience-overlay">
+                        <h5 class="title">{{item.title}}</h5>
+                        <p>{{item.shortdesc | slice:0:70}}</p>
+                        <a routerLink="/service-details">Read More</a>
+                        <i [class]="item.icon"></i>
+                    </div>
+                </div> <!-- single experience -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div>
